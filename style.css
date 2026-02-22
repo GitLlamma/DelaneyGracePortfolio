@@ -123,6 +123,19 @@ hr {
     font-size: 1.2rem;
 }
 
+.skills-list {
+    columns: 2;
+    column-gap: 2rem;
+    padding-left: 1.2rem;
+    margin-top: 0.5rem;
+    color: var(--text-light);
+}
+
+.skills-list li {
+    margin-bottom: 0.6rem;
+    break-inside: avoid;
+}
+
 .exp-row {
     display: flex;
     justify-content: space-between;
@@ -184,5 +197,8 @@ footer h2 {
     .exp-row {
         flex-direction: column;
         margin-bottom: 1rem;
+    }
+    .skills-list {
+        columns: 1;
     }
 }
