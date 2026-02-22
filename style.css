@@ -65,6 +65,14 @@ hr {
     align-items: center;
 }
 
+.bio-image-container img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/5; /* Standard Headshot Ratio */
+    object-fit: cover;
+    border-radius: 4px;
+}
+
 .image-placeholder {
     width: 100%;
     aspect-ratio: 4/5; /* Standard Headshot Ratio */
