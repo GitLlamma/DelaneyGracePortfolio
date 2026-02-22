@@ -1,0 +1,8 @@
+﻿# OS
+.DS_Store
+Thumbs.db
+
+# JetBrains Rider/IDEA
+.idea/
+*.iml
+out/
