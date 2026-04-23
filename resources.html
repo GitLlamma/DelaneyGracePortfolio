@@ -11,12 +11,13 @@
 
 <header>
     <nav class="container nav-inner">
-        <a href="index.html" class="name-brand">Delaney Grace</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="lessons.html">Lessons</a></li>
-            <li><a href="resources.html" class="active">Resources</a></li>
         </ul>
     </nav>
 </header>
@@ -188,5 +189,11 @@
     </div>
 </footer>
 
+<script>
+    document.querySelector('.nav-toggle').addEventListener('click', function() {
+        this.classList.toggle('open');
+        document.querySelector('.nav-links').classList.toggle('open');
+    });
+</script>
 </body>
 </html>
