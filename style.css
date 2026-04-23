@@ -360,8 +360,10 @@ hr {
 
 .pricing-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 300px);
     gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    justify-content: center;
 }
 
 .pricing-card {
@@ -370,28 +372,9 @@ hr {
     border-radius: 4px;
     padding: 2.5rem 2rem;
     text-align: center;
-}
-
-.pricing-card.featured {
-    border-color: var(--accent);
-    position: relative;
-}
-
-.pricing-card.featured::before {
-    content: "Most Popular";
-    position: absolute;
-    top: -12px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--accent);
-    color: white;
-    font-size: 0.7rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    padding: 3px 14px;
-    border-radius: 20px;
-    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .pricing-card h3 {
@@ -421,6 +404,8 @@ hr {
     color: var(--text-light);
     font-size: 0.88rem;
     margin-bottom: 2rem;
+    flex: 1;
+    width: 100%;
 }
 
 .pricing-card ul li {
@@ -432,6 +417,69 @@ hr {
     content: "✓ ";
     color: var(--accent);
     font-weight: 700;
+}
+
+.pricing-notes {
+    border-top: 1px solid var(--border);
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.pricing-notes > p {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pricing-notes h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.pricing-notes-cta {
+    margin-top: 1.25rem;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.pricing-notes-cta a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent);
+}
+
+.travel-table {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 1.25rem auto 0;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.travel-table th {
+    text-align: left;
+    padding: 0.6rem 1rem;
+    color: var(--text-dark);
+    font-weight: 600;
+    border-bottom: 2px solid var(--border);
+}
+
+.travel-table td {
+    padding: 0.6rem 1rem;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-light);
+    text-align: left;
+}
+
+.travel-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.table-sublabel {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    font-style: italic;
 }
 
 .what-to-expect {
